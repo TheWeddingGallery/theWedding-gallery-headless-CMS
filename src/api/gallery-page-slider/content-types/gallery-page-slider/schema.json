@@ -4,7 +4,8 @@
   "info": {
     "singularName": "gallery-page-slider",
     "pluralName": "gallery-page-sliders",
-    "displayName": "galleryPageSlider"
+    "displayName": "galleryPageSlider",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,6 +24,9 @@
       "relation": "manyToMany",
       "target": "api::active-gallery-page-slider.active-gallery-page-slider",
       "mappedBy": "gallery_page_sliders"
+    },
+    "studioPageLink": {
+      "type": "string"
     }
   }
 }
