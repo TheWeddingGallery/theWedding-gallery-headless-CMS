@@ -4,7 +4,8 @@
   "info": {
     "singularName": "active-gallery-page-slider",
     "pluralName": "active-gallery-page-sliders",
-    "displayName": "activeGalleryPageSlider"
+    "displayName": "activeGalleryPageSlider",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,9 @@
       "relation": "manyToMany",
       "target": "api::gallery-page-slider.gallery-page-slider",
       "inversedBy": "active_gallery_page_sliders"
+    },
+    "status": {
+      "type": "string"
     }
   }
 }
