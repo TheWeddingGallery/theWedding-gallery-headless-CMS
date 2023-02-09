@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_page_sliders",
+  "info": {
+    "singularName": "gallery-page-slider",
+    "pluralName": "gallery-page-sliders",
+    "displayName": "galleryPageSlider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "studioName": {
+      "type": "string",
+      "required": true
+    },
+    "sliderImglink": {
+      "type": "string"
+    },
+    "active_gallery_page_sliders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::active-gallery-page-slider.active-gallery-page-slider",
+      "mappedBy": "gallery_page_sliders"
+    }
+  }
+}

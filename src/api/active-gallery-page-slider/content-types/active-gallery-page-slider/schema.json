@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "active_gallery_page_sliders",
+  "info": {
+    "singularName": "active-gallery-page-slider",
+    "pluralName": "active-gallery-page-sliders",
+    "displayName": "activeGalleryPageSlider"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gallery_page_sliders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::gallery-page-slider.gallery-page-slider",
+      "inversedBy": "active_gallery_page_sliders"
+    }
+  }
+}

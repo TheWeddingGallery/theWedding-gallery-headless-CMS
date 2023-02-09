@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_post_imgs",
+  "info": {
+    "singularName": "gallery-post-img",
+    "pluralName": "gallery-post-imgs",
+    "displayName": "galleryPostImg",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgLink1": {
+      "type": "string"
+    },
+    "imgLink2": {
+      "type": "string"
+    },
+    "imgLink3": {
+      "type": "string"
+    },
+    "imgLink4": {
+      "type": "string"
+    },
+    "imgLink5": {
+      "type": "string"
+    },
+    "imgLink6": {
+      "type": "string"
+    },
+    "imgLink7": {
+      "type": "string"
+    },
+    "imgLink8": {
+      "type": "string"
+    },
+    "imgLink9": {
+      "type": "string"
+    },
+    "imgLink10": {
+      "type": "string"
+    },
+    "gallery_post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gallery-post.gallery-post",
+      "mappedBy": "gallery_post_img"
+    }
+  }
+}
