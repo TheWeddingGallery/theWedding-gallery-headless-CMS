@@ -65,6 +65,9 @@
       "relation": "oneToOne",
       "target": "api::gallery-post-img.gallery-post-img",
       "inversedBy": "gallery_post"
+    },
+    "authorProfilePic": {
+      "type": "string"
     }
   }
 }
